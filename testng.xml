@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="MavenPackage1.AmazonProject.TC02_loginwithValidCredentials"/>
+      
+      <class name="MavenPackage1.AmazonProject.TC05_SearchProduct"/>
+      <class name="MavenPackage1.AmazonProject.TC06_filters"/>
+      <class name="MavenPackage1.AmazonProject.TC03_loginwithInValidCredentials"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
