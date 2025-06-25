@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
+<suite name="AmazonProjectTestSuite" >
+  <test thread-count="5" name="Testing on Edge browser">
+  <parameter name="browser" value="Edge"></parameter>
     <classes>
-      <class name="MavenPackage1.AmazonProject.TC02_loginwithValidCredentials"/>
-      
+      <class name="MavenPackage1.AmazonProject.TC10_deleteitemfromcart"/>
+      <class name="MavenPackage1.AmazonProject.TC08_sortproduct"/>
       <class name="MavenPackage1.AmazonProject.TC05_SearchProduct"/>
+      <class name="MavenPackage1.AmazonProject.TC11_checkoutdetails"/>
       <class name="MavenPackage1.AmazonProject.TC06_filters"/>
       <class name="MavenPackage1.AmazonProject.TC03_loginwithInValidCredentials"/>
+      <class name="MavenPackage1.AmazonProject.TC12_PaymentMethods"/>
+      <class name="MavenPackage1.AmazonProject.TC04_AccountInformation"/>
+      <class name="MavenPackage1.AmazonProject.TC15_withoutlogin"/>
+      <class name="MavenPackage1.AmazonProject.TC14_fivestarrating"/>
+      <class name="MavenPackage1.AmazonProject.TC07_productdetails"/>
+      <class name="MavenPackage1.AmazonProject.TC13_couponcode"/>
+      <class name="MavenPackage1.AmazonProject.TC02_loginwithValidCredentials"/>
+      <class name="MavenPackage1.AmazonProject.TC09_addtocart"/>
     </classes>
   </test> <!-- Test -->
+  
 </suite> <!-- Suite -->

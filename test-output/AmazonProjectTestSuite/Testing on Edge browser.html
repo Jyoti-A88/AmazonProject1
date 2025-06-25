@@ -1,0 +1,703 @@
+<html>
+<head>
+<title>TestNG:  Testing on Edge browser</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Testing on Edge browser</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>12/2/2</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jun 24 17:09:18 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>1082 seconds (1082957 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='MavenPackage1.AmazonProject.TC04_AccountInformation.editaccountdetails()'><b>editaccountdetails</b><br>Test class: MavenPackage1.AmazonProject.TC04_AccountInformation<br/>
+<a href="#Output-83340805" onClick='toggleBox("Output-83340805", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-83340805" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-83340805">
+<br/>
+User Name:8152999644<br/>
+User Entered Password<br/>
+Login successful with User Name:Hello, Jyoti<br/>
+Listener:Test is Fail<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (b78703057bbb7d879db5175c9607c3de)] -&gt; xpath: //span[.=&apos;Your Account&apos;]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65194}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65194/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b78703057bbb7d879db5175c9607c3de
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at MavenPackage1.AmazonProject.editaccountdetailspage.youraccount1(editaccountdetailspage.java:28)
+	at MavenPackage1.AmazonProject.TC04_AccountInformation.editaccountdetails(TC04_AccountInformation.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace83340805", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace83340805'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (b78703057bbb7d879db5175c9607c3de)] -&gt; xpath: //span[.=&apos;Your Account&apos;]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65194}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65194/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b78703057bbb7d879db5175c9607c3de
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at MavenPackage1.AmazonProject.editaccountdetailspage.youraccount1(editaccountdetailspage.java:28)
+	at MavenPackage1.AmazonProject.TC04_AccountInformation.editaccountdetails(TC04_AccountInformation.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>37</td>
+<td>MavenPackage1.AmazonProject.TC04_AccountInformation@1dac5ef</td></tr>
+<tr>
+<td title='MavenPackage1.AmazonProject.TC03_loginwithInValidCredentials.loginwithinvalidcredentials()'><b>loginwithinvalidcredentials</b><br>Test class: MavenPackage1.AmazonProject.TC03_loginwithInValidCredentials<br/>
+<a href="#Output-1011387188" onClick='toggleBox("Output-1011387188", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1011387188" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1011387188">
+<br/>
+User Name:8152999644<br/>
+User Entered Password<br/>
+Listener:Test is Fail<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=137.0.7151.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e41c4106809611bfc3138bdc39444d32, getElementText {id=f.860E810E305DE0372E32BAA6CB4A9CFD.d.6C87300FBD3F198FCD657C5886EAEE05.e.382}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64934}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64934/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e41c4106809611bfc3138bdc39444d32)] -&gt; xpath: (//h4[@class=&apos;a-alert-heading&apos;])[1]]
+Session ID: e41c4106809611bfc3138bdc39444d32
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
+	at MavenPackage1.AmazonProject.loginPage.invalilogin(loginPage.java:76)
+	at MavenPackage1.AmazonProject.TC03_loginwithInValidCredentials.loginwithinvalidcredentials(TC03_loginwithInValidCredentials.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1011387188", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1011387188'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=137.0.7151.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e41c4106809611bfc3138bdc39444d32, getElementText {id=f.860E810E305DE0372E32BAA6CB4A9CFD.d.6C87300FBD3F198FCD657C5886EAEE05.e.382}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64934}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64934/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e41c4106809611bfc3138bdc39444d32)] -&gt; xpath: (//h4[@class=&apos;a-alert-heading&apos;])[1]]
+Session ID: e41c4106809611bfc3138bdc39444d32
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
+	at MavenPackage1.AmazonProject.loginPage.invalilogin(loginPage.java:76)
+	at MavenPackage1.AmazonProject.TC03_loginwithInValidCredentials.loginwithinvalidcredentials(TC03_loginwithInValidCredentials.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>15</td>
+<td>MavenPackage1.AmazonProject.TC03_loginwithInValidCredentials@4e3958e7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='MavenPackage1.AmazonProject.TC12_PaymentMethods.Payment()'><b>Payment</b><br>Test class: MavenPackage1.AmazonProject.TC12_PaymentMethods<br/>
+<a href="#Output-285301920" onClick='toggleBox("Output-285301920", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-285301920" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-285301920">
+<br/>
+User Name:8152999644<br/>
+User Entered Password<br/>
+Login successful with User Name:Hello, Jyoti<br/>
+Searchbar is visible and able to search Toys for 3 year kid<br/>
+No of item present in cart Before:1<br/>
+Add to cart button is clickable<br/>
+Cart count After product added to the cart: 2<br/>
+Add to cart container is clickable<br/>
+Total payment options : 6<br/>
+Payment option 0 is clickable<br/>
+Payment option 1 is clickable<br/>
+Payment option 2 is clickable<br/>
+Payment option 3 is clickable<br/>
+Payment option 4 is clickable<br/>
+Payment option 5 is clickable<br/>
+Listener:Test is Pass<br/>
+</div>
+</td>
+<td></td>
+<td>52</td>
+<td>MavenPackage1.AmazonProject.TC12_PaymentMethods@77f80c04</td></tr>
+<tr>
+<td title='MavenPackage1.AmazonProject.TC14_fivestarrating.fivestarrating()'><b>fivestarrating</b><br>Test class: MavenPackage1.AmazonProject.TC14_fivestarrating<br/>
+<a href="#Output-1017560321" onClick='toggleBox("Output-1017560321", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1017560321" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1017560321">
+<br/>
+User Name:avvannavarjyoti@gmail.com<br/>
+User Entered Password<br/>
+Login successful with User Name:Hello, Naveen<br/>
+Verified the page title is : Your Orders<br/>
+Click on 5star rating<br/>
+Listener:Test is Pass<br/>
+</div>
+</td>
+<td></td>
+<td>38</td>
+<td>MavenPackage1.AmazonProject.TC14_fivestarrating@58ea606c</td></tr>
+<tr>
+<td title='MavenPackage1.AmazonProject.TC09_addtocart.addtocart()'><b>addtocart</b><br>Test class: MavenPackage1.AmazonProject.TC09_addtocart<br/>
+<a href="#Output-858315599" onClick='toggleBox("Output-858315599", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-858315599" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-858315599">
+<br/>
+User Name:8152999644<br/>
+User Entered Password<br/>
+Login successful with User Name:Hello, Jyoti<br/>
+Searchbar is visible and able to search Toys for 3 year kid<br/>
+No of item present in cart Before:4<br/>
+Add to cart button is clickable<br/>
+Cart count After product added to the cart: 5<br/>
+Listener:Test is Pass<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>MavenPackage1.AmazonProject.TC09_addtocart@68e5eea7</td></tr>
+<tr>
+<td title='MavenPackage1.AmazonProject.TC08_sortproduct.sortproducts()'><b>sortproducts</b><br>Test class: MavenPackage1.AmazonProject.TC08_sortproduct<br/>
+<a href="#Output-1899938605" onClick='toggleBox("Output-1899938605", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1899938605" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1899938605">
+<br/>
+User Name:8152999644<br/>
+User Entered Password<br/>
+Login successful with User Name:Hello, Jyoti<br/>
+Searchbar is visible and able to search Shoes<br/>
+Price: Low to High is selected<br/>
+Price: High to Low is selected<br/>
+Avg. Customer Review is selected<br/>
+Best Sellers is selected<br/>
+Listener:Test is Pass<br/>
+</div>
+</td>
+<td></td>
+<td>51</td>
+<td>MavenPackage1.AmazonProject.TC08_sortproduct@4c309d4d</td></tr>
+<tr>
+<td title='MavenPackage1.AmazonProject.TC15_withoutlogin.withoutloginreachcartpage()'><b>withoutloginreachcartpage</b><br>Test class: MavenPackage1.AmazonProject.TC15_withoutlogin<br/>
+<a href="#Output-2080635344" onClick='toggleBox("Output-2080635344", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2080635344" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2080635344">
+Searchbar is visible and able to search Toys for 3 year kid<br/>
+No of item present in cart Before:0<br/>
+Add to cart button is clickable<br/>
+Add to cart container is clickable<br/>
+Listener:Test is Pass<br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>MavenPackage1.AmazonProject.TC15_withoutlogin@5c90e579</td></tr>
+<tr>
+<td title='MavenPackage1.AmazonProject.TC13_couponcode.couponcode()'><b>couponcode</b><br>Test class: MavenPackage1.AmazonProject.TC13_couponcode<br/>
+<a href="#Output-1111811191" onClick='toggleBox("Output-1111811191", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1111811191" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1111811191">
+<br/>
+User Name:8152999644<br/>
+User Entered Password<br/>
+Login successful with User Name:Hello, Jyoti<br/>
+Searchbar is visible and able to search Toys<br/>
+No of item present in cart Before:3<br/>
+Add to cart button is clickable<br/>
+Cart count After product added to the cart: 4<br/>
+Add to cart container is clickable<br/>
+Listener:Test is Pass<br/>
+</div>
+</td>
+<td></td>
+<td>39</td>
+<td>MavenPackage1.AmazonProject.TC13_couponcode@38e79ae3</td></tr>
+<tr>
+<td title='MavenPackage1.AmazonProject.TC10_deleteitemfromcart.deleteproductincart()'><b>deleteproductincart</b><br>Test class: MavenPackage1.AmazonProject.TC10_deleteitemfromcart<br/>
+<a href="#Output-1538593345" onClick='toggleBox("Output-1538593345", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1538593345" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1538593345">
+<br/>
+User Name:8152999644<br/>
+User Entered Password<br/>
+Login successful with User Name:Hello, Jyoti<br/>
+Searchbar is visible and able to search Toys for 3 year kid<br/>
+No of item present in cart Before:0<br/>
+Add to cart button is clickable<br/>
+Cart count After product added to the cart: 1<br/>
+Add to cart container is clickable<br/>
+Product is deleted<br/>
+Cart count After product deleted to the cart: 0<br/>
+Listener:Test is Pass<br/>
+</div>
+</td>
+<td></td>
+<td>53</td>
+<td>MavenPackage1.AmazonProject.TC10_deleteitemfromcart@20d525</td></tr>
+<tr>
+<td title='MavenPackage1.AmazonProject.TC11_checkoutdetails.checkout()'><b>checkout</b><br>Test class: MavenPackage1.AmazonProject.TC11_checkoutdetails<br/>
+<a href="#Output-681514473" onClick='toggleBox("Output-681514473", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-681514473" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-681514473">
+<br/>
+User Name:8152999644<br/>
+User Entered Password<br/>
+Login successful with User Name:Hello, Jyoti<br/>
+Searchbar is visible and able to search Toys for 3 year kid<br/>
+No of item present in cart Before:0<br/>
+Add to cart button is clickable<br/>
+Cart count After product added to the cart: 1<br/>
+Add to cart container is clickable<br/>
+Listener:Test is Pass<br/>
+</div>
+</td>
+<td></td>
+<td>63</td>
+<td>MavenPackage1.AmazonProject.TC11_checkoutdetails@37883b97</td></tr>
+<tr>
+<td title='MavenPackage1.AmazonProject.TC07_productdetails.productdetails()'><b>productdetails</b><br>Test class: MavenPackage1.AmazonProject.TC07_productdetails<br/>
+<a href="#Output-1373757528" onClick='toggleBox("Output-1373757528", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1373757528" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1373757528">
+<br/>
+User Name:8152999644<br/>
+User Entered Password<br/>
+Login successful with User Name:Hello, Jyoti<br/>
+Searchbar is visible and able to search Shoes<br/>
+Rating of product is : <br/>
+Selected Product Price is : 1,398<br/>
+Product description displayed : Product details<br/>
+Listener:Test is Pass<br/>
+</div>
+</td>
+<td></td>
+<td>46</td>
+<td>MavenPackage1.AmazonProject.TC07_productdetails@6f45df59</td></tr>
+<tr>
+<td title='MavenPackage1.AmazonProject.TC06_filters.searchwithfilters()'><b>searchwithfilters</b><br>Test class: MavenPackage1.AmazonProject.TC06_filters<br/>
+<a href="#Output-1802366774" onClick='toggleBox("Output-1802366774", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1802366774" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1802366774">
+<br/>
+User Name:8152999644<br/>
+User Entered Password<br/>
+Login successful with User Name:Hello, Jyoti<br/>
+Searchbar is visible and able to search Shoes<br/>
+Campus is selected<br/>
+Men  price is selected<br/>
+Listener:Test is Pass<br/>
+</div>
+</td>
+<td></td>
+<td>46</td>
+<td>MavenPackage1.AmazonProject.TC06_filters@6ab778a</td></tr>
+<tr>
+<td title='MavenPackage1.AmazonProject.TC02_loginwithValidCredentials.loginwithvalidcredentials()'><b>loginwithvalidcredentials</b><br>Test class: MavenPackage1.AmazonProject.TC02_loginwithValidCredentials<br/>
+<a href="#Output-353562601" onClick='toggleBox("Output-353562601", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-353562601" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-353562601">
+<br/>
+User Name:8152999644<br/>
+User Entered Password<br/>
+Login successful with User Name:Hello, Jyoti<br/>
+Listener:Test is Pass<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>MavenPackage1.AmazonProject.TC02_loginwithValidCredentials@63070bab</td></tr>
+<tr>
+<td title='MavenPackage1.AmazonProject.TC05_SearchProduct.searchproduct()'><b>searchproduct</b><br>Test class: MavenPackage1.AmazonProject.TC05_SearchProduct<br/>
+<a href="#Output-697001207" onClick='toggleBox("Output-697001207", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-697001207" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-697001207">
+<br/>
+User Name:8152999644<br/>
+User Entered Password<br/>
+Login successful with User Name:Hello, Jyoti<br/>
+Searchbar is visible and able to search Toys<br/>
+Listener:Test is Pass<br/>
+</div>
+</td>
+<td></td>
+<td>36</td>
+<td>MavenPackage1.AmazonProject.TC05_SearchProduct@38102d01</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='MavenPackage1.AmazonProject.TC08_sortproduct.sortproducts()'><b>sortproducts</b><br>Test class: MavenPackage1.AmazonProject.TC08_sortproduct<br/>
+<a href="#Output-1678422332" onClick='toggleBox("Output-1678422332", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1678422332" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1678422332">
+<br/>
+User Name:8152999644<br/>
+User Entered Password<br/>
+Login successful with User Name:Hello, Jyoti<br/>
+Searchbar is visible and able to search Shoes<br/>
+Price: Low to High is selected<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=137.0.7151.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [553cf6940d8cc5aebf24a8c6ab1b3281, getElementText {id=f.14E1643BF07889362A4BA00B66B82E0F.d.EDB82BB1FB062053458E5DA1867B319E.e.7162}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64262}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64262/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (553cf6940d8cc5aebf24a8c6ab1b3281)] -&gt; xpath: //select[@id=&apos;s-result-sort-select&apos;]]] -&gt; tag name: option]
+Session ID: 553cf6940d8cc5aebf24a8c6ab1b3281
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at MavenPackage1.AmazonProject.sortproductpage.priceHL(sortproductpage.java:43)
+	at MavenPackage1.AmazonProject.TC08_sortproduct.sortproducts(TC08_sortproduct.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1678422332", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1678422332'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=137.0.7151.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [553cf6940d8cc5aebf24a8c6ab1b3281, getElementText {id=f.14E1643BF07889362A4BA00B66B82E0F.d.EDB82BB1FB062053458E5DA1867B319E.e.7162}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64262}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64262/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on windows (553cf6940d8cc5aebf24a8c6ab1b3281)] -&gt; xpath: //select[@id=&apos;s-result-sort-select&apos;]]] -&gt; tag name: option]
+Session ID: 553cf6940d8cc5aebf24a8c6ab1b3281
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at MavenPackage1.AmazonProject.sortproductpage.priceHL(sortproductpage.java:43)
+	at MavenPackage1.AmazonProject.TC08_sortproduct.sortproducts(TC08_sortproduct.java:30)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>47</td>
+<td>MavenPackage1.AmazonProject.TC08_sortproduct@4c309d4d</td></tr>
+<tr>
+<td title='MavenPackage1.AmazonProject.TC13_couponcode.couponcode()'><b>couponcode</b><br>Test class: MavenPackage1.AmazonProject.TC13_couponcode<br/>
+<a href="#Output-1560388331" onClick='toggleBox("Output-1560388331", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1560388331" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1560388331">
+<br/>
+User Name:8152999644<br/>
+User Entered Password<br/>
+Login successful with User Name:Hello, Jyoti<br/>
+Searchbar is visible and able to search Toys<br/>
+No of item present in cart Before:2<br/>
+Add to cart button is clickable<br/>
+Cart count After product added to the cart: 3<br/>
+Add to cart container is clickable<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: 	//input[@type=&apos;radio&apos; and contains(@value, &apos;APB&apos;)]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at MavenPackage1.AmazonProject.paymentpage.couponcode(paymentpage.java:46)
+	at MavenPackage1.AmazonProject.TC13_couponcode.couponcode(TC13_couponcode.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;	//input[@type=&apos;radio&apos; and contains(@value, &apos;APB&apos;)]&quot;}
+  (Session info: chrome=137.0.7151.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1b47499ec7661e93778fe0e777e6ae8c, findElement {value=	//input[@type=&apos;radio&apos; and contains(@value, &apos;APB&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49283}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49283/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b47499ec7661e93778fe0e777e6ae8c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 28 more
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1560388331", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1560388331'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: 	//input[@type=&apos;radio&apos; and contains(@value, &apos;APB&apos;)]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at MavenPackage1.AmazonProject.paymentpage.couponcode(paymentpage.java:46)
+	at MavenPackage1.AmazonProject.TC13_couponcode.couponcode(TC13_couponcode.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;	//input[@type=&apos;radio&apos; and contains(@value, &apos;APB&apos;)]&quot;}
+  (Session info: chrome=137.0.7151.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1b47499ec7661e93778fe0e777e6ae8c, findElement {value=	//input[@type=&apos;radio&apos; and contains(@value, &apos;APB&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49283}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49283/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b47499ec7661e93778fe0e777e6ae8c
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 28 more
+</pre></div></td>
+<td>69</td>
+<td>MavenPackage1.AmazonProject.TC13_couponcode@38e79ae3</td></tr>
+</table><p>
+</body>
+</html>

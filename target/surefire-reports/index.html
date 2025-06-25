@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-AmazonProjectTestSuite" class="navigator-link">
+              <span class="suite-name border-failed">AmazonProjectTestSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-AmazonProjectTestSuite" class="navigator-link ">
+                    <span>C:\Users\Naveen\eclipse-workspace\AmazonProject\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-AmazonProjectTestSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-AmazonProjectTestSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-AmazonProjectTestSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-AmazonProjectTestSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-AmazonProjectTestSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-AmazonProjectTestSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">16 methods, 2 failed,  2 skipped,  12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-AmazonProjectTestSuite" class="hide-methods failed suite-AmazonProjectTestSuite"> (hide)</a> <!-- hide-methods failed suite-AmazonProjectTestSuite -->
+                      <a href="#" panel-name="suite-AmazonProjectTestSuite" class="show-methods failed suite-AmazonProjectTestSuite"> (show)</a> <!-- show-methods failed suite-AmazonProjectTestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-AmazonProjectTestSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonProjectTestSuite" title="MavenPackage1.AmazonProject.TC13_couponcode" class="method navigator-link" hash-for-method="couponcode">couponcode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonProjectTestSuite" title="MavenPackage1.AmazonProject.TC03_loginwithInValidCredentials" class="method navigator-link" hash-for-method="loginwithinvalidcredentials">loginwithinvalidcredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-AmazonProjectTestSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-AmazonProjectTestSuite" class="hide-methods skipped suite-AmazonProjectTestSuite"> (hide)</a> <!-- hide-methods skipped suite-AmazonProjectTestSuite -->
+                      <a href="#" panel-name="suite-AmazonProjectTestSuite" class="show-methods skipped suite-AmazonProjectTestSuite"> (show)</a> <!-- show-methods skipped suite-AmazonProjectTestSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-AmazonProjectTestSuite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonProjectTestSuite" title="MavenPackage1.AmazonProject.TC13_couponcode" class="method navigator-link" hash-for-method="couponcode">couponcode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonProjectTestSuite" title="MavenPackage1.AmazonProject.TC13_couponcode" class="method navigator-link" hash-for-method="couponcode">couponcode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-AmazonProjectTestSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-AmazonProjectTestSuite" class="hide-methods passed suite-AmazonProjectTestSuite"> (hide)</a> <!-- hide-methods passed suite-AmazonProjectTestSuite -->
+                      <a href="#" panel-name="suite-AmazonProjectTestSuite" class="show-methods passed suite-AmazonProjectTestSuite"> (show)</a> <!-- show-methods passed suite-AmazonProjectTestSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-AmazonProjectTestSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonProjectTestSuite" title="MavenPackage1.AmazonProject.TC12_PaymentMethods" class="method navigator-link" hash-for-method="Payment">Payment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonProjectTestSuite" title="MavenPackage1.AmazonProject.TC09_addtocart" class="method navigator-link" hash-for-method="addtocart">addtocart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonProjectTestSuite" title="MavenPackage1.AmazonProject.TC11_checkoutdetails" class="method navigator-link" hash-for-method="checkout">checkout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonProjectTestSuite" title="MavenPackage1.AmazonProject.TC10_deleteitemfromcart" class="method navigator-link" hash-for-method="deleteproductincart">deleteproductincart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonProjectTestSuite" title="MavenPackage1.AmazonProject.TC04_AccountInformation" class="method navigator-link" hash-for-method="editaccountdetails">editaccountdetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonProjectTestSuite" title="MavenPackage1.AmazonProject.TC14_fivestarrating" class="method navigator-link" hash-for-method="fivestarrating">fivestarrating</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonProjectTestSuite" title="MavenPackage1.AmazonProject.TC02_loginwithValidCredentials" class="method navigator-link" hash-for-method="loginwithvalidcredentials">loginwithvalidcredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonProjectTestSuite" title="MavenPackage1.AmazonProject.TC07_productdetails" class="method navigator-link" hash-for-method="productdetails">productdetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonProjectTestSuite" title="MavenPackage1.AmazonProject.TC05_SearchProduct" class="method navigator-link" hash-for-method="searchproduct">searchproduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonProjectTestSuite" title="MavenPackage1.AmazonProject.TC06_filters" class="method navigator-link" hash-for-method="searchwithfilters">searchwithfilters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonProjectTestSuite" title="MavenPackage1.AmazonProject.TC08_sortproduct" class="method navigator-link" hash-for-method="sortproducts">sortproducts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonProjectTestSuite" title="MavenPackage1.AmazonProject.TC15_withoutlogin" class="method navigator-link" hash-for-method="withoutloginreachcartpage">withoutloginreachcartpage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-AmazonProjectTestSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-AmazonProjectTestSuite" class="panel AmazonProjectTestSuite">
+          <div class="suite-AmazonProjectTestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">MavenPackage1.AmazonProject.TC03_loginwithInValidCredentials</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginwithinvalidcredentials">
+                  </a> <!-- loginwithinvalidcredentials -->
+                  <span class="method-name">loginwithinvalidcredentials</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=137.0.7151.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f4206ca321010faf2f93dbb649190980, getElementText {id=f.96CE68CEE2DB48D8BE990308DBF15FC5.d.4E85555941728F2B4CA283A2438427F0.e.340}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52474}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52474/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f4206ca321010faf2f93dbb649190980)] -&gt; xpath: (//h4[@class=&apos;a-alert-heading&apos;])[1]]
+Session ID: f4206ca321010faf2f93dbb649190980
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
+	at MavenPackage1.AmazonProject.loginPage.invalilogin(loginPage.java:76)
+	at MavenPackage1.AmazonProject.TC03_loginwithInValidCredentials.loginwithinvalidcredentials(TC03_loginwithInValidCredentials.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AmazonProjectTestSuite-class-failed -->
+          <div class="suite-AmazonProjectTestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">MavenPackage1.AmazonProject.TC13_couponcode</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="couponcode">
+                  </a> <!-- couponcode -->
+                  <span class="method-name">couponcode</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: 	//input[@type=&apos;radio&apos; and contains(@value, &apos;APB&apos;)]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at MavenPackage1.AmazonProject.paymentpage.couponcode(paymentpage.java:46)
+	at MavenPackage1.AmazonProject.TC13_couponcode.couponcode(TC13_couponcode.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;	//input[@type=&apos;radio&apos; and contains(@value, &apos;APB&apos;)]&quot;}
+  (Session info: chrome=137.0.7151.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c5f5248c4e560a9f0cc637d1472fb3b2, findElement {value=	//input[@type=&apos;radio&apos; and contains(@value, &apos;APB&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53274}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53274/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c5f5248c4e560a9f0cc637d1472fb3b2
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 32 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AmazonProjectTestSuite-class-failed -->
+          <div class="suite-AmazonProjectTestSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">MavenPackage1.AmazonProject.TC13_couponcode</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="couponcode">
+                  </a> <!-- couponcode -->
+                  <span class="method-name">couponcode</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: 	//input[@type=&apos;radio&apos; and contains(@value, &apos;APB&apos;)]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at MavenPackage1.AmazonProject.paymentpage.couponcode(paymentpage.java:46)
+	at MavenPackage1.AmazonProject.TC13_couponcode.couponcode(TC13_couponcode.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;	//input[@type=&apos;radio&apos; and contains(@value, &apos;APB&apos;)]&quot;}
+  (Session info: chrome=137.0.7151.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [69bdfe77a161045f77d4a8039ac3077c, findElement {value=	//input[@type=&apos;radio&apos; and contains(@value, &apos;APB&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53165}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53165/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 69bdfe77a161045f77d4a8039ac3077c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 32 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="couponcode">
+                  </a> <!-- couponcode -->
+                  <span class="method-name">couponcode</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: 	//input[@type=&apos;radio&apos; and contains(@value, &apos;APB&apos;)]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at MavenPackage1.AmazonProject.paymentpage.couponcode(paymentpage.java:46)
+	at MavenPackage1.AmazonProject.TC13_couponcode.couponcode(TC13_couponcode.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;	//input[@type=&apos;radio&apos; and contains(@value, &apos;APB&apos;)]&quot;}
+  (Session info: chrome=137.0.7151.120)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [888350a30b6a1b94a32b2a0ee5ea5b55, findElement {value=	//input[@type=&apos;radio&apos; and contains(@value, &apos;APB&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53055}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53055/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 888350a30b6a1b94a32b2a0ee5ea5b55
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 32 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AmazonProjectTestSuite-class-skipped -->
+          <div class="suite-AmazonProjectTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MavenPackage1.AmazonProject.TC02_loginwithValidCredentials</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginwithvalidcredentials">
+                  </a> <!-- loginwithvalidcredentials -->
+                  <span class="method-name">loginwithvalidcredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AmazonProjectTestSuite-class-passed -->
+          <div class="suite-AmazonProjectTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MavenPackage1.AmazonProject.TC11_checkoutdetails</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkout">
+                  </a> <!-- checkout -->
+                  <span class="method-name">checkout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AmazonProjectTestSuite-class-passed -->
+          <div class="suite-AmazonProjectTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MavenPackage1.AmazonProject.TC14_fivestarrating</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="fivestarrating">
+                  </a> <!-- fivestarrating -->
+                  <span class="method-name">fivestarrating</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AmazonProjectTestSuite-class-passed -->
+          <div class="suite-AmazonProjectTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MavenPackage1.AmazonProject.TC15_withoutlogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="withoutloginreachcartpage">
+                  </a> <!-- withoutloginreachcartpage -->
+                  <span class="method-name">withoutloginreachcartpage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AmazonProjectTestSuite-class-passed -->
+          <div class="suite-AmazonProjectTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MavenPackage1.AmazonProject.TC12_PaymentMethods</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Payment">
+                  </a> <!-- Payment -->
+                  <span class="method-name">Payment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AmazonProjectTestSuite-class-passed -->
+          <div class="suite-AmazonProjectTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MavenPackage1.AmazonProject.TC04_AccountInformation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="editaccountdetails">
+                  </a> <!-- editaccountdetails -->
+                  <span class="method-name">editaccountdetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AmazonProjectTestSuite-class-passed -->
+          <div class="suite-AmazonProjectTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MavenPackage1.AmazonProject.TC05_SearchProduct</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchproduct">
+                  </a> <!-- searchproduct -->
+                  <span class="method-name">searchproduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AmazonProjectTestSuite-class-passed -->
+          <div class="suite-AmazonProjectTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MavenPackage1.AmazonProject.TC09_addtocart</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addtocart">
+                  </a> <!-- addtocart -->
+                  <span class="method-name">addtocart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AmazonProjectTestSuite-class-passed -->
+          <div class="suite-AmazonProjectTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MavenPackage1.AmazonProject.TC08_sortproduct</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="sortproducts">
+                  </a> <!-- sortproducts -->
+                  <span class="method-name">sortproducts</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AmazonProjectTestSuite-class-passed -->
+          <div class="suite-AmazonProjectTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MavenPackage1.AmazonProject.TC07_productdetails</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="productdetails">
+                  </a> <!-- productdetails -->
+                  <span class="method-name">productdetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AmazonProjectTestSuite-class-passed -->
+          <div class="suite-AmazonProjectTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MavenPackage1.AmazonProject.TC06_filters</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchwithfilters">
+                  </a> <!-- searchwithfilters -->
+                  <span class="method-name">searchwithfilters</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AmazonProjectTestSuite-class-passed -->
+          <div class="suite-AmazonProjectTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">MavenPackage1.AmazonProject.TC10_deleteitemfromcart</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteproductincart">
+                  </a> <!-- deleteproductincart -->
+                  <span class="method-name">deleteproductincart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AmazonProjectTestSuite-class-passed -->
+        </div> <!-- panel AmazonProjectTestSuite -->
+        <div panel-name="test-xml-AmazonProjectTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Naveen\eclipse-workspace\AmazonProject\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;AmazonProjectTestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Testing on Edge browser&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Edge&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;MavenPackage1.AmazonProject.TC10_deleteitemfromcart&quot;/&gt;
+      &lt;class name=&quot;MavenPackage1.AmazonProject.TC08_sortproduct&quot;/&gt;
+      &lt;class name=&quot;MavenPackage1.AmazonProject.TC05_SearchProduct&quot;/&gt;
+      &lt;class name=&quot;MavenPackage1.AmazonProject.TC11_checkoutdetails&quot;/&gt;
+      &lt;class name=&quot;MavenPackage1.AmazonProject.TC06_filters&quot;/&gt;
+      &lt;class name=&quot;MavenPackage1.AmazonProject.TC03_loginwithInValidCredentials&quot;/&gt;
+      &lt;class name=&quot;MavenPackage1.AmazonProject.TC12_PaymentMethods&quot;/&gt;
+      &lt;class name=&quot;MavenPackage1.AmazonProject.TC04_AccountInformation&quot;/&gt;
+      &lt;class name=&quot;MavenPackage1.AmazonProject.TC15_withoutlogin&quot;/&gt;
+      &lt;class name=&quot;MavenPackage1.AmazonProject.TC14_fivestarrating&quot;/&gt;
+      &lt;class name=&quot;MavenPackage1.AmazonProject.TC07_productdetails&quot;/&gt;
+      &lt;class name=&quot;MavenPackage1.AmazonProject.TC13_couponcode&quot;/&gt;
+      &lt;class name=&quot;MavenPackage1.AmazonProject.TC02_loginwithValidCredentials&quot;/&gt;
+      &lt;class name=&quot;MavenPackage1.AmazonProject.TC09_addtocart&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Testing on Edge browser --&gt;
+&lt;/suite&gt; &lt;!-- AmazonProjectTestSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-AmazonProjectTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for AmazonProjectTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Testing on Edge browser (14 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-AmazonProjectTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for AmazonProjectTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-AmazonProjectTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for AmazonProjectTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_AmazonProjectTestSuite');
+function tableData_AmazonProjectTestSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(16);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'couponcode')
+data.setCell(0, 2, 'MavenPackage1.AmazonProject.TC13_couponcode')
+data.setCell(0, 3, 44222);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'couponcode')
+data.setCell(1, 2, 'MavenPackage1.AmazonProject.TC13_couponcode')
+data.setCell(1, 3, 42397);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'couponcode')
+data.setCell(2, 2, 'MavenPackage1.AmazonProject.TC13_couponcode')
+data.setCell(2, 3, 42372);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'deleteproductincart')
+data.setCell(3, 2, 'MavenPackage1.AmazonProject.TC10_deleteitemfromcart')
+data.setCell(3, 3, 36340);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'checkout')
+data.setCell(4, 2, 'MavenPackage1.AmazonProject.TC11_checkoutdetails')
+data.setCell(4, 3, 34116);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'sortproducts')
+data.setCell(5, 2, 'MavenPackage1.AmazonProject.TC08_sortproduct')
+data.setCell(5, 3, 32943);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Payment')
+data.setCell(6, 2, 'MavenPackage1.AmazonProject.TC12_PaymentMethods')
+data.setCell(6, 3, 25244);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'productdetails')
+data.setCell(7, 2, 'MavenPackage1.AmazonProject.TC07_productdetails')
+data.setCell(7, 3, 20723);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'editaccountdetails')
+data.setCell(8, 2, 'MavenPackage1.AmazonProject.TC04_AccountInformation')
+data.setCell(8, 3, 20255);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'searchwithfilters')
+data.setCell(9, 2, 'MavenPackage1.AmazonProject.TC06_filters')
+data.setCell(9, 3, 18413);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'addtocart')
+data.setCell(10, 2, 'MavenPackage1.AmazonProject.TC09_addtocart')
+data.setCell(10, 3, 18226);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'fivestarrating')
+data.setCell(11, 2, 'MavenPackage1.AmazonProject.TC14_fivestarrating')
+data.setCell(11, 3, 16140);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'searchproduct')
+data.setCell(12, 2, 'MavenPackage1.AmazonProject.TC05_SearchProduct')
+data.setCell(12, 3, 12852);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'loginwithvalidcredentials')
+data.setCell(13, 2, 'MavenPackage1.AmazonProject.TC02_loginwithValidCredentials')
+data.setCell(13, 3, 7941);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'withoutloginreachcartpage')
+data.setCell(14, 2, 'MavenPackage1.AmazonProject.TC15_withoutlogin')
+data.setCell(14, 3, 6893);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'loginwithinvalidcredentials')
+data.setCell(15, 2, 'MavenPackage1.AmazonProject.TC03_loginwithInValidCredentials')
+data.setCell(15, 3, 6168);
+window.suiteTableData['AmazonProjectTestSuite']= { tableData: data, tableDiv: 'times-div-AmazonProjectTestSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 6 minutes</span>
+              <div id="times-div-AmazonProjectTestSuite">
+              </div> <!-- times-div-AmazonProjectTestSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-AmazonProjectTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for AmazonProjectTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">productdetails</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">User Name:8152999644</span>
+                <span class="reporter-method-output">User Entered Password</span>
+                <span class="reporter-method-output">Login successful with User Name:Hello, Jyoti</span>
+                <span class="reporter-method-output">Searchbar is visible and able to search Shoes</span>
+                <span class="reporter-method-output">Rating of product is : 3.2</span>
+                <span class="reporter-method-output">Selected Product Price is : 974</span>
+                <span class="reporter-method-output">Product description displayed : Product details</span>
+                <span class="reporter-method-output">Listener:Test is Pass</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginwithvalidcredentials</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">User Name:8152999644</span>
+                <span class="reporter-method-output">User Entered Password</span>
+                <span class="reporter-method-output">Login successful with User Name:Hello, Jyoti</span>
+                <span class="reporter-method-output">Listener:Test is Pass</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">searchwithfilters</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">User Name:8152999644</span>
+                <span class="reporter-method-output">User Entered Password</span>
+                <span class="reporter-method-output">Login successful with User Name:Hello, Jyoti</span>
+                <span class="reporter-method-output">Searchbar is visible and able to search Shoes</span>
+                <span class="reporter-method-output">Puma is selected</span>
+                <span class="reporter-method-output">₹500 - ₹700  price is selected</span>
+                <span class="reporter-method-output">Listener:Test is Pass</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">sortproducts</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">User Name:8152999644</span>
+                <span class="reporter-method-output">User Entered Password</span>
+                <span class="reporter-method-output">Login successful with User Name:Hello, Jyoti</span>
+                <span class="reporter-method-output">Searchbar is visible and able to search Shoes</span>
+                <span class="reporter-method-output">Price: Low to High is selected</span>
+                <span class="reporter-method-output">Price: High to Low is selected</span>
+                <span class="reporter-method-output">Avg. Customer Review is selected</span>
+                <span class="reporter-method-output">Best Sellers is selected</span>
+                <span class="reporter-method-output">Listener:Test is Pass</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">withoutloginreachcartpage</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Searchbar is visible and able to search Toys for 3 year kid</span>
+                <span class="reporter-method-output">No of item present in cart Before:0</span>
+                <span class="reporter-method-output">Add to cart button is clickable</span>
+                <span class="reporter-method-output">Add to cart container is clickable</span>
+                <span class="reporter-method-output">Listener:Test is Pass</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">editaccountdetails</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">User Name:8152999644</span>
+                <span class="reporter-method-output">User Entered Password</span>
+                <span class="reporter-method-output">Login successful with User Name:Hello, Jyoti</span>
+                <span class="reporter-method-output">Verified the page title is : Your Account</span>
+                <span class="reporter-method-output">In Accounct Name updated. successfully</span>
+                <span class="reporter-method-output">Listener:Test is Pass</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">searchproduct</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">User Name:8152999644</span>
+                <span class="reporter-method-output">User Entered Password</span>
+                <span class="reporter-method-output">Login successful with User Name:Hello, Jyoti</span>
+                <span class="reporter-method-output">Searchbar is visible and able to search Toys</span>
+                <span class="reporter-method-output">Listener:Test is Pass</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addtocart</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">User Name:8152999644</span>
+                <span class="reporter-method-output">User Entered Password</span>
+                <span class="reporter-method-output">Login successful with User Name:Hello, Jyoti</span>
+                <span class="reporter-method-output">Searchbar is visible and able to search Toys for 3 year kid</span>
+                <span class="reporter-method-output">No of item present in cart Before:5</span>
+                <span class="reporter-method-output">Add to cart button is clickable</span>
+                <span class="reporter-method-output">Cart count After product added to the cart: 6</span>
+                <span class="reporter-method-output">Listener:Test is Pass</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">deleteproductincart</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">User Name:8152999644</span>
+                <span class="reporter-method-output">User Entered Password</span>
+                <span class="reporter-method-output">Login successful with User Name:Hello, Jyoti</span>
+                <span class="reporter-method-output">Searchbar is visible and able to search Toys for 3 year kid</span>
+                <span class="reporter-method-output">No of item present in cart Before:0</span>
+                <span class="reporter-method-output">Add to cart button is clickable</span>
+                <span class="reporter-method-output">Cart count After product added to the cart: 1</span>
+                <span class="reporter-method-output">Add to cart container is clickable</span>
+                <span class="reporter-method-output">Product is deleted</span>
+                <span class="reporter-method-output">Cart count After product deleted to the cart: 0</span>
+                <span class="reporter-method-output">Listener:Test is Pass</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">fivestarrating</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">User Name:avvannavarjyoti@gmail.com</span>
+                <span class="reporter-method-output">User Entered Password</span>
+                <span class="reporter-method-output">Login successful with User Name:Hello, Naveen</span>
+                <span class="reporter-method-output">Verified the page title is : Your Orders</span>
+                <span class="reporter-method-output">Click on 5star rating</span>
+                <span class="reporter-method-output">Listener:Test is Pass</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Payment</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">User Name:8152999644</span>
+                <span class="reporter-method-output">User Entered Password</span>
+                <span class="reporter-method-output">Login successful with User Name:Hello, Jyoti</span>
+                <span class="reporter-method-output">Searchbar is visible and able to search Toys for 3 year kid</span>
+                <span class="reporter-method-output">No of item present in cart Before:1</span>
+                <span class="reporter-method-output">Add to cart button is clickable</span>
+                <span class="reporter-method-output">Cart count After product added to the cart: 2</span>
+                <span class="reporter-method-output">Add to cart container is clickable</span>
+                <span class="reporter-method-output">Total payment options : 5</span>
+                <span class="reporter-method-output">Payment option 0 is clickable</span>
+                <span class="reporter-method-output">Payment option 1 is clickable</span>
+                <span class="reporter-method-output">Payment option 2 is clickable</span>
+                <span class="reporter-method-output">Payment option 3 is clickable</span>
+                <span class="reporter-method-output">Payment option 4 is clickable</span>
+                <span class="reporter-method-output">Listener:Test is Pass</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">checkout</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">User Name:8152999644</span>
+                <span class="reporter-method-output">User Entered Password</span>
+                <span class="reporter-method-output">Login successful with User Name:Hello, Jyoti</span>
+                <span class="reporter-method-output">Searchbar is visible and able to search Toys for 3 year kid</span>
+                <span class="reporter-method-output">No of item present in cart Before:0</span>
+                <span class="reporter-method-output">Add to cart button is clickable</span>
+                <span class="reporter-method-output">Cart count After product added to the cart: 1</span>
+                <span class="reporter-method-output">Add to cart container is clickable</span>
+                <span class="reporter-method-output">Listener:Test is Pass</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">couponcode</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">User Name:8152999644</span>
+                <span class="reporter-method-output">User Entered Password</span>
+                <span class="reporter-method-output">Login successful with User Name:Hello, Jyoti</span>
+                <span class="reporter-method-output">Searchbar is visible and able to search Toys</span>
+                <span class="reporter-method-output">No of item present in cart Before:4</span>
+                <span class="reporter-method-output">Add to cart button is clickable</span>
+                <span class="reporter-method-output">Cart count After product added to the cart: 5</span>
+                <span class="reporter-method-output">Add to cart container is clickable</span>
+                <span class="reporter-method-output">Listener:Test is Fail</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginwithinvalidcredentials</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">User Name:8152999644</span>
+                <span class="reporter-method-output">User Entered Password</span>
+                <span class="reporter-method-output">Listener:Test is Fail</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">couponcode</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">User Name:8152999644</span>
+                <span class="reporter-method-output">User Entered Password</span>
+                <span class="reporter-method-output">Login successful with User Name:Hello, Jyoti</span>
+                <span class="reporter-method-output">Searchbar is visible and able to search Toys</span>
+                <span class="reporter-method-output">No of item present in cart Before:3</span>
+                <span class="reporter-method-output">Add to cart button is clickable</span>
+                <span class="reporter-method-output">Cart count After product added to the cart: 4</span>
+                <span class="reporter-method-output">Add to cart container is clickable</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">couponcode</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"></span>
+                <span class="reporter-method-output">User Name:8152999644</span>
+                <span class="reporter-method-output">User Entered Password</span>
+                <span class="reporter-method-output">Login successful with User Name:Hello, Jyoti</span>
+                <span class="reporter-method-output">Searchbar is visible and able to search Toys</span>
+                <span class="reporter-method-output">No of item present in cart Before:2</span>
+                <span class="reporter-method-output">Add to cart button is clickable</span>
+                <span class="reporter-method-output">Cart count After product added to the cart: 3</span>
+                <span class="reporter-method-output">Add to cart container is clickable</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-AmazonProjectTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-AmazonProjectTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">MavenPackage1.AmazonProject.TC10_deleteitemfromcart</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteproductincart</span>
+                <span class="method-start">13406 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitbrowser</span>
+                <span class="method-start">49995 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MavenPackage1.AmazonProject.TC08_sortproduct</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">53549 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">sortproducts</span>
+                <span class="method-start">64728 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitbrowser</span>
+                <span class="method-start">98088 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MavenPackage1.AmazonProject.TC05_SearchProduct</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">101602 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchproduct</span>
+                <span class="method-start">113007 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitbrowser</span>
+                <span class="method-start">126346 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MavenPackage1.AmazonProject.TC11_checkoutdetails</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">130232 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkout</span>
+                <span class="method-start">141320 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitbrowser</span>
+                <span class="method-start">175673 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MavenPackage1.AmazonProject.TC06_filters</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">180456 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchwithfilters</span>
+                <span class="method-start">190631 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitbrowser</span>
+                <span class="method-start">209456 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MavenPackage1.AmazonProject.TC03_loginwithInValidCredentials</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">213686 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginwithinvalidcredentials</span>
+                <span class="method-start">233476 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitbrowser</span>
+                <span class="method-start">239821 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MavenPackage1.AmazonProject.TC12_PaymentMethods</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">243475 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Payment</span>
+                <span class="method-start">254929 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitbrowser</span>
+                <span class="method-start">280355 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MavenPackage1.AmazonProject.TC04_AccountInformation</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">285118 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editaccountdetails</span>
+                <span class="method-start">299008 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitbrowser</span>
+                <span class="method-start">319457 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MavenPackage1.AmazonProject.TC15_withoutlogin</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">324003 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">withoutloginreachcartpage</span>
+                <span class="method-start">338242 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitbrowser</span>
+                <span class="method-start">345352 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MavenPackage1.AmazonProject.TC14_fivestarrating</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">349339 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">fivestarrating</span>
+                <span class="method-start">363577 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitbrowser</span>
+                <span class="method-start">379926 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MavenPackage1.AmazonProject.TC07_productdetails</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">384499 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">productdetails</span>
+                <span class="method-start">404536 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitbrowser</span>
+                <span class="method-start">425643 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MavenPackage1.AmazonProject.TC13_couponcode</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">429416 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">couponcode</span>
+                <span class="method-start">439086 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitbrowser</span>
+                <span class="method-start">481486 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">485054 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">couponcode</span>
+                <span class="method-start">494465 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitbrowser</span>
+                <span class="method-start">538688 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">542509 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">couponcode</span>
+                <span class="method-start">552952 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitbrowser</span>
+                <span class="method-start">595499 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MavenPackage1.AmazonProject.TC02_loginwithValidCredentials</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">599156 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginwithvalidcredentials</span>
+                <span class="method-start">610202 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitbrowser</span>
+                <span class="method-start">618683 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">MavenPackage1.AmazonProject.TC09_addtocart</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchbrowser</span>
+                <span class="method-start">622147 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addtocart</span>
+                <span class="method-start">633071 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitbrowser</span>
+                <span class="method-start">651562 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
